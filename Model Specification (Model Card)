@@ -1,0 +1,26 @@
+
+1.1 Architecture
+Model Name: MalxLabs-V4
+
+Base Architecture: DeepSeek-R1-Distill-Qwen-1.5B
+
+Parameter Count: 1.5 Billion
+
+Quantization: GGUF (Q4_K_M)
+
+Primary Objective: High-precision technical reasoning and code generation.
+
+1.2 Training Methodology
+Training Hardware: NVIDIA RTX 4500 Ada (24GB VRAM) via RunPod.
+
+Storage Allocation: 80GB Volume.
+
+Training Type: Supervised Fine-Tuning (SFT).
+
+Datasets:
+
+OpenMathInstruct-2: Injected for step-by-step mathematical reasoning.
+
+CodeFeedback-Filtered: Focused on Luau and Python script structure and optimization.
+
+Method: Dataset streaming was utilized to maintain high throughput during the RunPod session.
