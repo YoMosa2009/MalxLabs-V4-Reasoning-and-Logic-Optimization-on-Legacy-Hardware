@@ -1,0 +1,27 @@
+Mathematical Logic: High
+Strengths: Exceptional at step by step derivations for physics and algebra.
+
+Behavior: Successfully breaks down complex formulas into logical sequences.
+
+Reliability: High accuracy when restricted to mathematical proofs and variable solving.
+
+Code Generation: Medium-High
+Strengths: Proficient in Luau (Roblox/UAV logic) and Python scripting.
+
+Behavior: Adheres to strict structural constraints and technical requirements provided in the prompt.
+
+Reliability: Best results are achieved when asking for specific functions rather than full-scale applications.
+
+Reasoning Depth: Medium
+Strengths: Capable of multi step planning and "Chain of Thought" processing.
+
+Behavior: Can solve logic puzzles and technical architectural questions.
+
+Constraint: Due to the 1.5B parameter count, the model is sensitive to "rambling." This is successfully mitigated using Min-P 0.1 sampling.
+
+Inference Latency: Excellent
+Hardware: Optimized for the NVIDIA GTX 1080.
+
+Speed: Consistently delivers 80+ tokens per second.
+
+Efficiency: Full GPU offloading (35 layers) ensures the system remains responsive during long generation tasks.
