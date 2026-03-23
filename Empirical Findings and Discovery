@@ -1,0 +1,14 @@
+3.1 The "Logic Horizon"
+Testing revealed that the 1.5B parameter size has a finite "Logic Horizon." While the model excels at short to medium reasoning chains, it can enter "hallucination loops" if the thought process exceeds ~500 tokens.
+
+3.2 Hardware Bottleneck Analysis
+DDR3 1333MHz Impact: High context lengths (16k+) caused significant "Prefill Hangs." The i7-4790 and DDR3 RAM could not move KV Cache data to the GPU fast enough, leading to terminal timeouts.
+
+Optimization: Reducing context to 4096 tokens restored instant inference performance on the GTX 1080.
+
+3.3 The "Leakage" Phenomenon
+Early V4 iterations suffered from "Answer Leakage," where the model began answering questions inside the <think> block.
+
+Discovery: This was caused by "noisy" low-probability tokens.
+
+Fix: Implementing Min-P 0.1 sampling successfully muted these tokens, forcing the model to complete the reasoning phase before outputting code or text.
