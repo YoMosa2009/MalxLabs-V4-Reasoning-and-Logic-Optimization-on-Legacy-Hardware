@@ -1,0 +1,25 @@
+2.1 The Legacy Stack
+CPU: Intel i7-4790 (OC 4.0GHz, core parking disabled).
+
+GPU: NVIDIA GTX 1080 (8GB VRAM, Pascal Architecture).
+
+RAM: 16GB DDR3 1333MHz (Primary system bottleneck).
+
+OS: Windows 10 FSE (Optimized) / Ubuntu 22.04 LTS (WSL2).
+
+
+-----------------------------------------------------------
+
+2.2 Local Deployment Configuration:
+
+cd ~/llama.cpp && ./build/bin/llama-cli \
+  -m ~/models/logic_model.gguf \
+  -ngl 35 \
+  -c 4096 \
+  --flash-attn on \
+  --mlock \
+  --temp 0.6 \
+  --min-p 0.1 \
+  --reasoning-format deepseek \
+  --jinja \
+  -p "<｜User｜>[INSERT PROMPT]<｜Assistant｜>"   
