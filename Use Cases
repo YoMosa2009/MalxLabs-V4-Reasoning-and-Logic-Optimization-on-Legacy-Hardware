@@ -1,0 +1,20 @@
+During my personal testing and actual benchmarking with questions and code generation with this AI model i have noticed being extra specefic in the prompt is the optimal way for code generation.
+For example:
+
+Prompt: generate me a python code that finds the average of 10 different numbers, the user inputs their desired numbers one by one, and the python code will output the average of those 10 numbers.
+-------------------------------------------------------
+Output: # Get the user's desired numbers one by one
+average = 0
+
+for i in range(10):
+    number = int(input(f"Enter the {i+1}th number: "))
+    average += number
+
+average /= 10
+
+print("The average of the 10 numbers is:", average)
+
+
+------------------------------------------------------
+
+As we can see, it outputs the correct code, and during testing of this code, it fulfills the system to find average number, from 10 different digits.
