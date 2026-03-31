@@ -5,7 +5,7 @@ GPU: NVIDIA GTX 1080 (8GB VRAM, Pascal Architecture).
 
 RAM: 16GB DDR3 1333MHz (Primary system bottleneck).
 
-OS: Windows 10 FSE (Optimized) / Ubuntu 22.04 LTS (WSL2).
+OS: Windows 10 ESU (Optimized) / Ubuntu 22.04 LTS (WSL2).
 
 
 -----------------------------------------------------------
