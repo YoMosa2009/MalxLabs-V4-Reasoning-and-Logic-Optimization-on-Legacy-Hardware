@@ -141,11 +141,18 @@ Early V4 iterations suffered from "Answer Leakage," where the model began answer
 - DeepSeek-R1-1.5B model in GGUF format (Q4_K_M quantization)
 - NVIDIA GPU with at least 8GB VRAM (GTX 1080 or better)
 
+### Download the Model
+
+**[📥 Download MalxLabs-V4 Model from Hugging Face](https://huggingface.co/MalxTech/MalxLabs-DeepSeek-R1-Distill-Qwen-1.5B/blob/main/MalxLabs-DeepSeek-R1-Distill-Qwen-1.5B.Q4_K_M.gguf)**
+
+Click the link above to download the model, then place it in `~/models/logic_model.gguf`
+
 ### Quick Start
 
-1. Ensure your model is in `~/models/logic_model.gguf`
-2. Navigate to llama.cpp directory: `cd ~/llama.cpp`
-3. Run the deployment configuration command (see Hardware Specification section)
+1. Download the model using the link above
+2. Place it in `~/models/logic_model.gguf`
+3. Navigate to llama.cpp directory: `cd ~/llama.cpp`
+4. Run the deployment configuration command (see Hardware Specification section)
 
 ---
 
