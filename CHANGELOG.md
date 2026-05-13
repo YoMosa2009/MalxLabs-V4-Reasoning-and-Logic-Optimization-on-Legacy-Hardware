@@ -1,0 +1,82 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2026-05-13
+
+### Added
+- Initial release of MalxLabs-V4
+- DeepSeek-R1-1.5B model fine-tuned for technical reasoning
+- Full documentation suite:
+  - Comprehensive README with architecture, hardware specs, and performance metrics
+  - Quick Start guide for setup and deployment
+  - Advanced Configuration guide with parameter reference
+  - Research Findings documentation detailing empirical discoveries
+  - Contributing guidelines
+- .gitignore for Python, models, and build artifacts
+- CHANGELOG tracking (this file)
+- Documentation archive of original research notes
+
+### Features
+- Full GPU offloading support (35 layers on GTX 1080)
+- Flash Attention optimization for 15-20% speed boost
+- Min-P 0.1 sampling to prevent answer leakage
+- Optimal 4096-token context window for legacy hardware
+- 80+ tokens per second inference on GTX 1080
+- High-quality mathematical reasoning capabilities
+- Proficient code generation in Luau and Python
+
+### Optimizations
+- Context window tuning for DDR3 1333MHz RAM constraints
+- Temperature setting (0.6) optimized for reasoning
+- GPU/CPU task distribution minimizing memory bandwidth bottlenecks
+
+### Documentation
+- Main README with visual badges and structured sections
+- Quick Start setup guide
+- Advanced Configuration with multiple optimization profiles
+- Research Findings with empirical discovery analysis
+- Comprehensive parameter reference guide
+- Troubleshooting section
+- Integration examples (Python, JavaScript)
+
+---
+
+## Future Roadmap
+
+### Planned Features
+- [ ] Additional fine-tuning for domain-specific tasks
+- [ ] Quantization variants (Q3_K_M, Q5_K_M comparison)
+- [ ] Continuous batching for multiple prompt processing
+- [ ] Custom prompt templates for specific domains
+- [ ] Performance profiling tools
+- [ ] Benchmark suite for hardware testing
+
+### Research Areas
+- [ ] Speculative decoding implementation
+- [ ] Token caching across similar queries
+- [ ] Extended context window strategies
+- [ ] Multi-model ensemble approaches
+- [ ] Alternative quantization methods
+
+---
+
+## Version History
+
+### v1.0.0 (Current)
+- Initial stable release
+- All core features operational
+- Complete documentation
+- Tested on legacy hardware (GTX 1080, i7-4790)
+
+---
+
+## Notes
+
+- All changes are focused on optimizing reasoning and logic on legacy hardware
+- Performance metrics are based on GTX 1080, i7-4790, 16GB DDR3 1333MHz configuration
+- Documentation reflects empirical testing and real-world findings
+
