@@ -1,0 +1,49 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="460" fill="#fcfcfb"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">Small Reasoning Models — Parameter Count</text>
+<text x="56" y="56" font-size="13.5" fill="#52514e">Same weight class as MalxLabs-V4, all publicly documented on their model cards</text>
+<line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="46" y="346.0" font-size="12" fill="#898781" text-anchor="end">0</text>
+<line x1="56" y1="279.5" x2="870" y2="279.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="46" y="283.5" font-size="12" fill="#898781" text-anchor="end">1</text>
+<line x1="56" y1="217.0" x2="870" y2="217.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="46" y="221.0" font-size="12" fill="#898781" text-anchor="end">2</text>
+<line x1="56" y1="154.5" x2="870" y2="154.5" stroke="#e1e0d9" stroke-width="1"/>
+<text x="46" y="158.5" font-size="12" fill="#898781" text-anchor="end">2</text>
+<line x1="56" y1="92.0" x2="870" y2="92.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="46" y="96.0" font-size="12" fill="#898781" text-anchor="end">3</text>
+<line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#c3c2b7" stroke-width="1.5"/>
+<path d="M 91.14285714285714,342.0 L 91.14285714285714,223.77053455019558 Q 91.14285714285714,219.77053455019558 95.14285714285714,219.77053455019558 L 133.14285714285714,219.77053455019558 Q 137.14285714285714,219.77053455019558 137.14285714285714,223.77053455019558 L 137.14285714285714,342.0 Z" fill="#2a78d6"/>
+<rect x="87.1" y="215.8" width="54.0" height="126.2" fill="none" stroke="#2a78d6" stroke-width="1.5" stroke-dasharray="3,3" rx="6" opacity="0.55"/>
+<text x="114.1" y="209.8" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.50B</text>
+<text x="114.1" y="194.8" font-size="10.5" fill="#898781" text-anchor="middle">DeepSeek-R1-Distill-Qwen-1.5B FT</text>
+<text x="114.1" y="362.0" font-size="12" font-weight="700" fill="#2a78d6" text-anchor="middle">MalxLabs</text>
+<text x="114.1" y="376.0" font-size="12" font-weight="700" fill="#2a78d6" text-anchor="middle">V4 (ours)</text>
+<path d="M 207.42857142857142,342.0 L 207.42857142857142,223.77053455019558 Q 207.42857142857142,219.77053455019558 211.42857142857142,219.77053455019558 L 249.42857142857142,219.77053455019558 Q 253.42857142857142,219.77053455019558 253.42857142857142,223.77053455019558 L 253.42857142857142,342.0 Z" fill="#eb6834"/>
+<text x="230.4" y="209.8" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.50B</text>
+<text x="230.4" y="194.8" font-size="10.5" fill="#898781" text-anchor="middle">base model</text>
+<text x="230.4" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">DeepSeek-R1</text>
+<text x="230.4" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Distill-1.5B</text>
+<path d="M 323.7142857142857,342.0 L 323.7142857142857,220.51108213820078 Q 323.7142857142857,216.51108213820078 327.7142857142857,216.51108213820078 L 365.7142857142857,216.51108213820078 Q 369.7142857142857,216.51108213820078 369.7142857142857,220.51108213820078 L 369.7142857142857,342.0 Z" fill="#1baf7a"/>
+<text x="346.7" y="206.5" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.54B</text>
+<text x="346.7" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Qwen2.5-1.5B</text>
+<text x="346.7" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
+<path d="M 440.00000000000006,342.0 L 440.00000000000006,207.47327249022166 Q 440.00000000000006,203.47327249022166 444.00000000000006,203.47327249022166 L 482.00000000000006,203.47327249022166 Q 486.00000000000006,203.47327249022166 486.00000000000006,207.47327249022166 L 486.00000000000006,342.0 Z" fill="#eda100"/>
+<text x="463.0" y="193.5" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.70B</text>
+<text x="463.0" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">SmolLM2-1.7B</text>
+<text x="463.0" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
+<path d="M 556.2857142857142,342.0 L 556.2857142857142,264.5136897001304 Q 556.2857142857142,260.5136897001304 560.2857142857142,260.5136897001304 L 598.2857142857142,260.5136897001304 Q 602.2857142857142,260.5136897001304 602.2857142857142,264.5136897001304 L 602.2857142857142,342.0 Z" fill="#e87ba4"/>
+<text x="579.3" y="250.5" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.00B</text>
+<text x="579.3" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Llama-3.2</text>
+<text x="579.3" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">1B-Instruct</text>
+<path d="M 672.5714285714286,342.0 L 672.5714285714286,256.3650586701434 Q 672.5714285714286,252.3650586701434 676.5714285714286,252.3650586701434 L 714.5714285714286,252.3650586701434 Q 718.5714285714286,252.3650586701434 718.5714285714286,256.3650586701434 L 718.5714285714286,342.0 Z" fill="#008300"/>
+<text x="695.6" y="242.4" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">1.10B</text>
+<text x="695.6" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">TinyLlama</text>
+<text x="695.6" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">1.1B-Chat</text>
+<path d="M 788.8571428571429,342.0 L 788.8571428571429,134.135593220339 Q 788.8571428571429,130.135593220339 792.8571428571429,130.135593220339 L 830.8571428571429,130.135593220339 Q 834.8571428571429,130.135593220339 834.8571428571429,134.135593220339 L 834.8571428571429,342.0 Z" fill="#4a3aa7"/>
+<text x="811.9" y="120.1" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">2.60B</text>
+<text x="811.9" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Gemma-2-2B-it</text>
+<text x="16" y="78" font-size="12" fill="#898781">Params (B)</text>
+<text x="56" y="431" font-size="11" fill="#898781">Sources: each model's official Hugging Face model card. MalxLabs-V4 GGUF metadata reports 1.78B incl. embeddings; 1.5B is the nominal</text>
+<text x="56" y="446" font-size="11" fill="#898781">base-model size.</text>
+</svg>

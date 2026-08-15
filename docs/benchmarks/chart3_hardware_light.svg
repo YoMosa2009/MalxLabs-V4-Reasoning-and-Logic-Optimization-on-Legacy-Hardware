@@ -1,0 +1,36 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="460" fill="#fcfcfb"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">MalxLabs-V4 — Real Hardware Benchmark</text>
+<text x="56" y="56" font-size="13.5" fill="#52514e">Measured live on this machine, CPU-only, no discrete GPU — via llama-bench (llama.cpp b10448)</text>
+<rect x="56" y="82" width="250.66666666666666" height="118" rx="10" fill="#2a78d6" opacity="0.08"/>
+<rect x="56" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#2a78d6" stroke-width="1.5" opacity="0.5"/>
+<text x="74" y="112" font-size="12.5" fill="#898781">GENERATION SPEED (measured)</text>
+<text x="74" y="148" font-size="30" font-weight="700" fill="#0b0b0b">14.5 tok/s</text>
+<text x="74" y="184" font-size="11.5" fill="#52514e">tg128 · 8 threads · i5-1035G7, no GPU</text>
+<rect x="324.66666666666663" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#e1e0d9" stroke-width="1.5"/>
+<text x="342.66666666666663" y="112" font-size="12.5" fill="#898781">GENERATION SPEED (repo claim)</text>
+<text x="342.66666666666663" y="148" font-size="30" font-weight="700" fill="#0b0b0b">80+ tok/s</text>
+<text x="342.66666666666663" y="184" font-size="11.5" fill="#52514e">README target · GTX 1080, -ngl 35 full offload</text>
+<rect x="593.3333333333333" y="82" width="250.66666666666666" height="118" rx="10" fill="#1baf7a" opacity="0.08"/>
+<rect x="593.3333333333333" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#1baf7a" stroke-width="1.5" opacity="0.5"/>
+<text x="611.3333333333333" y="112" font-size="12.5" fill="#898781">PROMPT PROCESSING (measured)</text>
+<text x="611.3333333333333" y="148" font-size="30" font-weight="700" fill="#0b0b0b">61.5 tok/s</text>
+<text x="611.3333333333333" y="184" font-size="11.5" fill="#52514e">pp512 · same CPU-only run</text>
+<text x="56" y="228" font-size="12.5" fill="#898781">THIS MACHINE</text>
+<rect x="56" y="242" width="201" height="26" rx="13" fill="#e1e0d9"/>
+<text x="156" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">Intel Core i5-1035G7 · 4C/8T</text>
+<rect x="267" y="242" width="122" height="26" rx="13" fill="#e1e0d9"/>
+<text x="328" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">16 GB RAM (DDR4)</text>
+<rect x="398" y="242" width="234" height="26" rx="13" fill="#e1e0d9"/>
+<text x="515" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">Intel Iris Plus — no discrete GPU</text>
+<rect x="642" y="242" width="148" height="26" rx="13" fill="#e1e0d9"/>
+<text x="716" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">~1.7 GB RSS @ c=4096</text>
+<text x="56" y="302" font-size="12.5" fill="#898781">PROMPT vs GENERATION THROUGHPUT (measured, this run)</text>
+<text x="56" y="339.0" font-size="12" fill="#52514e">Prompt processing (pp512)</text>
+<path d="M 266,322 L 760.9,322 Q 764.9,322 764.9,326 L 764.9,344.0 Q 764.9,348.0 760.9,348.0 L 266,348.0 Z" fill="#1baf7a"/>
+<text x="774.9" y="339.0" font-size="12.5" font-weight="600" fill="#0b0b0b">61.48 ± 4.62 t/s</text>
+<text x="56" y="387.0" font-size="12" fill="#52514e">Text generation (tg128)</text>
+<path d="M 266,370 L 379.7,370 Q 383.7,370 383.7,374 L 383.7,392.0 Q 383.7,396.0 379.7,396.0 L 266,396.0 Z" fill="#2a78d6"/>
+<text x="393.7" y="387.0" font-size="12.5" font-weight="600" fill="#0b0b0b">14.50 ± 2.24 t/s</text>
+<text x="56" y="446" font-size="11" fill="#898781">Measured 2026-08-15 · llama.cpp build b10448 (CPU/icelake backend) · Q4_K_M GGUF · not independently re-run for other models on this rig.</text>
+</svg>

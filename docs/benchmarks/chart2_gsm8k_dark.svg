@@ -1,0 +1,35 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="460" fill="#1a1a19"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#ffffff">GSM8K (5-shot) — Published Scores Only</text>
+<text x="56" y="56" font-size="13.5" fill="#c3c2b7">Grade-school math accuracy, instruct models, apples-to-apples methodology</text>
+<line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="46" y="346.0" font-size="12" fill="#898781" text-anchor="end">0</text>
+<line x1="56" y1="279.5" x2="870" y2="279.5" stroke="#2c2c2a" stroke-width="1"/>
+<text x="46" y="283.5" font-size="12" fill="#898781" text-anchor="end">19</text>
+<line x1="56" y1="217.0" x2="870" y2="217.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="46" y="221.0" font-size="12" fill="#898781" text-anchor="end">37</text>
+<line x1="56" y1="154.5" x2="870" y2="154.5" stroke="#2c2c2a" stroke-width="1"/>
+<text x="46" y="158.5" font-size="12" fill="#898781" text-anchor="end">56</text>
+<line x1="56" y1="92.0" x2="870" y2="92.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="46" y="96.0" font-size="12" fill="#898781" text-anchor="end">75</text>
+<line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#383835" stroke-width="1.5"/>
+<path d="M 114.4,342.0 L 114.4,134.13559322033896 Q 114.4,130.13559322033896 118.4,130.13559322033896 L 156.4,130.13559322033896 Q 160.4,130.13559322033896 160.4,134.13559322033896 L 160.4,342.0 Z" fill="#3987e5"/>
+<text x="137.4" y="120.1" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">63.3%</text>
+<text x="137.4" y="362.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">Qwen2.5-1.5B</text>
+<text x="137.4" y="376.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">Instruct</text>
+<path d="M 277.20000000000005,342.0 L 277.20000000000005,182.66693442579054 Q 277.20000000000005,178.66693442579054 281.20000000000005,178.66693442579054 L 319.20000000000005,178.66693442579054 Q 323.20000000000005,178.66693442579054 323.20000000000005,182.66693442579054 L 323.20000000000005,342.0 Z" fill="#d95926"/>
+<text x="300.2" y="168.7" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">48.8%</text>
+<text x="300.2" y="362.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">SmolLM2-1.7B</text>
+<text x="300.2" y="376.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">Instruct</text>
+<path d="M 440.0,342.0 L 440.0,220.82260958042144 Q 440.0,216.82260958042144 444.0,216.82260958042144 L 482.0,216.82260958042144 Q 486.0,216.82260958042144 486.0,220.82260958042144 L 486.0,342.0 Z" fill="#199e70"/>
+<text x="463.0" y="206.8" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">37.4%</text>
+<text x="463.0" y="362.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">Llama-3.2</text>
+<text x="463.0" y="376.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">1B-Instruct</text>
+<path d="M 602.8000000000001,342.0 L 602.8000000000001,266.0069617372212 Q 602.8000000000001,262.0069617372212 606.8000000000001,262.0069617372212 L 644.8000000000001,262.0069617372212 Q 648.8000000000001,262.0069617372212 648.8000000000001,266.0069617372212 L 648.8000000000001,342.0 Z" fill="#c98500"/>
+<text x="625.8" y="252.0" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">23.9%</text>
+<text x="625.8" y="237.0" font-size="10.5" fill="#898781" text-anchor="middle">maj@1</text>
+<text x="625.8" y="362.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="middle">Gemma-2-2B-it</text>
+<text x="16" y="78" font-size="12" fill="#898781">Accuracy (%)</text>
+<text x="56" y="431" font-size="11" fill="#898781">Sources: SmolLM2 paper (arXiv:2502.02737, Table 5) for Qwen2.5-1.5B-Instruct/SmolLM2-1.7B-Instruct/Llama-3.2-1B-Instruct; Gemma-2-2B-it model</text>
+<text x="56" y="446" font-size="11" fill="#898781">card (maj@1, slightly different protocol).</text>
+<rect x="688.6" y="152.0" width="200" height="108" rx="10" fill="#3987e5" opacity="0.08"/><rect x="688.6" y="152.0" width="200" height="108" rx="10" fill="none" stroke="#3987e5" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/><text x="788.6" y="176.0" font-size="11.5" font-weight="700" fill="#3987e5" text-anchor="middle">MalxLabs-V4 (ours)</text><text x="788.6" y="194.0" font-size="10" fill="#c3c2b7" text-anchor="middle">no published GSM8K score</text><text x="788.6" y="224.0" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">8 / 8 correct</text><text x="788.6" y="244.0" font-size="10" fill="#c3c2b7" text-anchor="middle">our own real spot-check, n=8</text></svg>

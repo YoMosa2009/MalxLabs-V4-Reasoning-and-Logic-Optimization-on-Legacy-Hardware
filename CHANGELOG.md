@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2026-08-15
+
+### Added
+- **Benchmark suite for hardware testing** (planned item from the roadmap
+  below, now delivered): real, measured CPU-only inference benchmark on a
+  second machine with no discrete GPU (Intel i5-1035G7 / Iris Plus).
+- `docs/HARDWARE_BENCHMARK_2026-08.md` — full methodology, throughput
+  (`llama-bench` pp512/tg128), memory footprint, an 8-problem accuracy
+  spot-check, and a reproduction of the README's own example prompt.
+- `docs/benchmarks/` — light/dark SVG comparison charts (parameter count vs.
+  6 similarly-sized small models; published GSM8K scores; this repo's own
+  measured hardware numbers), embedded in the README via `<picture>`.
+- New README section: [📊 Benchmarks & Comparisons](README.md#-benchmarks--comparisons).
+
 ## [1.0.0] - 2026-05-13
 
 ### Added
@@ -53,7 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] Continuous batching for multiple prompt processing
 - [ ] Custom prompt templates for specific domains
 - [ ] Performance profiling tools
-- [ ] Benchmark suite for hardware testing
+- [x] Benchmark suite for hardware testing — see `docs/HARDWARE_BENCHMARK_2026-08.md`
 
 ### Research Areas
 - [ ] Speculative decoding implementation
