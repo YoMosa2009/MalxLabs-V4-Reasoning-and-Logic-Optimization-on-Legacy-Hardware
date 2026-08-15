@@ -1,21 +1,21 @@
-<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
-<rect x="0" y="0" width="900" height="460" fill="#fcfcfb"/>
-<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">MalxLabs-V4 — Real Hardware Benchmark</text>
-<text x="56" y="56" font-size="13.5" fill="#52514e">Measured live on this machine, CPU-only, no discrete GPU — via llama-bench (llama.cpp b10448)</text>
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="560" fill="#fcfcfb"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">MalxLabs-V4 vs. Base Model — Real Hardware Benchmark</text>
+<text x="56" y="56" font-size="13.5" fill="#52514e">Both measured live, same rig, same run — via llama-bench (llama.cpp b10448), CPU-only, no discrete GPU</text>
 <rect x="56" y="82" width="250.66666666666666" height="118" rx="10" fill="#2a78d6" opacity="0.08"/>
 <rect x="56" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#2a78d6" stroke-width="1.5" opacity="0.5"/>
-<text x="74" y="112" font-size="12.5" fill="#898781">GENERATION SPEED (measured)</text>
-<text x="74" y="148" font-size="30" font-weight="700" fill="#0b0b0b">14.5 tok/s</text>
-<text x="74" y="184" font-size="11.5" fill="#52514e">tg128 · 8 threads · i5-1035G7, no GPU</text>
-<rect x="324.66666666666663" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#e1e0d9" stroke-width="1.5"/>
-<text x="342.66666666666663" y="112" font-size="12.5" fill="#898781">GENERATION SPEED (repo claim)</text>
-<text x="342.66666666666663" y="148" font-size="30" font-weight="700" fill="#0b0b0b">80+ tok/s</text>
-<text x="342.66666666666663" y="184" font-size="11.5" fill="#52514e">README target · GTX 1080, -ngl 35 full offload</text>
-<rect x="593.3333333333333" y="82" width="250.66666666666666" height="118" rx="10" fill="#1baf7a" opacity="0.08"/>
-<rect x="593.3333333333333" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#1baf7a" stroke-width="1.5" opacity="0.5"/>
-<text x="611.3333333333333" y="112" font-size="12.5" fill="#898781">PROMPT PROCESSING (measured)</text>
-<text x="611.3333333333333" y="148" font-size="30" font-weight="700" fill="#0b0b0b">61.5 tok/s</text>
-<text x="611.3333333333333" y="184" font-size="11.5" fill="#52514e">pp512 · same CPU-only run</text>
+<text x="74" y="112" font-size="12.5" fill="#898781">GENERATION SPEED — MalxLabs-V4</text>
+<text x="74" y="148" font-size="30" font-weight="700" fill="#0b0b0b">14.50 tok/s</text>
+<text x="74" y="184" font-size="11.5" fill="#52514e">tg128, measured · ±2.24</text>
+<rect x="324.66666666666663" y="82" width="250.66666666666666" height="118" rx="10" fill="#eb6834" opacity="0.08"/>
+<rect x="324.66666666666663" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#eb6834" stroke-width="1.5" opacity="0.5"/>
+<text x="342.66666666666663" y="112" font-size="12.5" fill="#898781">GENERATION SPEED — base model</text>
+<text x="342.66666666666663" y="148" font-size="30" font-weight="700" fill="#0b0b0b">12.76 tok/s</text>
+<text x="342.66666666666663" y="184" font-size="11.5" fill="#52514e">tg128, measured · ±3.15</text>
+<rect x="593.3333333333333" y="82" width="250.66666666666666" height="118" rx="10" fill="none" stroke="#e1e0d9" stroke-width="1.5"/>
+<text x="611.3333333333333" y="112" font-size="12.5" fill="#898781">GENERATION SPEED (repo claim)</text>
+<text x="611.3333333333333" y="148" font-size="30" font-weight="700" fill="#0b0b0b">80+ tok/s</text>
+<text x="611.3333333333333" y="184" font-size="11.5" fill="#52514e">README target · GTX 1080, full offload</text>
 <text x="56" y="228" font-size="12.5" fill="#898781">THIS MACHINE</text>
 <rect x="56" y="242" width="201" height="26" rx="13" fill="#e1e0d9"/>
 <text x="156" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">Intel Core i5-1035G7 · 4C/8T</text>
@@ -23,14 +23,23 @@
 <text x="328" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">16 GB RAM (DDR4)</text>
 <rect x="398" y="242" width="234" height="26" rx="13" fill="#e1e0d9"/>
 <text x="515" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">Intel Iris Plus — no discrete GPU</text>
-<rect x="642" y="242" width="148" height="26" rx="13" fill="#e1e0d9"/>
-<text x="716" y="259" font-size="11.5" fill="#52514e" text-anchor="middle">~1.7 GB RSS @ c=4096</text>
-<text x="56" y="302" font-size="12.5" fill="#898781">PROMPT vs GENERATION THROUGHPUT (measured, this run)</text>
-<text x="56" y="339.0" font-size="12" fill="#52514e">Prompt processing (pp512)</text>
-<path d="M 266,322 L 760.9,322 Q 764.9,322 764.9,326 L 764.9,344.0 Q 764.9,348.0 760.9,348.0 L 266,348.0 Z" fill="#1baf7a"/>
-<text x="774.9" y="339.0" font-size="12.5" font-weight="600" fill="#0b0b0b">61.48 ± 4.62 t/s</text>
-<text x="56" y="387.0" font-size="12" fill="#52514e">Text generation (tg128)</text>
-<path d="M 266,370 L 379.7,370 Q 383.7,370 383.7,374 L 383.7,392.0 Q 383.7,396.0 379.7,396.0 L 266,396.0 Z" fill="#2a78d6"/>
-<text x="393.7" y="387.0" font-size="12.5" font-weight="600" fill="#0b0b0b">14.50 ± 2.24 t/s</text>
-<text x="56" y="446" font-size="11" fill="#898781">Measured 2026-08-15 · llama.cpp build b10448 (CPU/icelake backend) · Q4_K_M GGUF · not independently re-run for other models on this rig.</text>
+<rect x="56" y="274" width="227" height="26" rx="13" fill="#e1e0d9"/>
+<text x="170" y="291" font-size="11.5" fill="#52514e" text-anchor="middle">MalxLabs-V4 ~1.7 GB RSS @ c=4096</text>
+<text x="56" y="334" font-size="12.5" fill="#898781">THROUGHPUT — BOTH MEASURED, SAME RIG, SAME RUN</text>
+<text x="56" y="352.0" font-size="11.5" font-weight="600" fill="#52514e">Prompt processing (pp512)</text>
+<text x="198.0" y="373.0" font-size="11" fill="#52514e" text-anchor="end">MalxLabs-V4</text>
+<path d="M 214,358 L 708.9,358 Q 712.9,358 712.9,362 L 712.9,376.0 Q 712.9,380.0 708.9,380.0 L 214,380.0 Z" fill="#2a78d6"/>
+<text x="722.9" y="373.0" font-size="12" font-weight="600" fill="#0b0b0b">61.48 ± 4.62 t/s</text>
+<text x="198.0" y="405.0" font-size="11" fill="#52514e" text-anchor="end">Base (untuned)</text>
+<path d="M 214,390 L 684.8,390 Q 688.8,390 688.8,394 L 688.8,408.0 Q 688.8,412.0 684.8,412.0 L 214,412.0 Z" fill="#eb6834"/>
+<text x="698.8" y="405.0" font-size="12" font-weight="600" fill="#0b0b0b">58.51 ± 8.44 t/s</text>
+<text x="56" y="430.0" font-size="11.5" font-weight="600" fill="#52514e">Text generation (tg128)</text>
+<text x="198.0" y="451.0" font-size="11" fill="#52514e" text-anchor="end">MalxLabs-V4</text>
+<path d="M 214,436 L 327.7,436 Q 331.7,436 331.7,440 L 331.7,454.0 Q 331.7,458.0 327.7,458.0 L 214,458.0 Z" fill="#2a78d6"/>
+<text x="341.7" y="451.0" font-size="12" font-weight="600" fill="#0b0b0b">14.50 ± 2.24 t/s</text>
+<text x="198.0" y="483.0" font-size="11" fill="#52514e" text-anchor="end">Base (untuned)</text>
+<path d="M 214,468 L 313.5,468 Q 317.5,468 317.5,472 L 317.5,486.0 Q 317.5,490.0 313.5,490.0 L 214,490.0 Z" fill="#eb6834"/>
+<text x="327.5" y="483.0" font-size="12" font-weight="600" fill="#0b0b0b">12.76 ± 3.15 t/s</text>
+<text x="56" y="531" font-size="11" fill="#898781">Measured 2026-08-15 · llama.cpp build b10448 (CPU/icelake backend) · both Q4_K_M GGUF, identical settings · base model:</text>
+<text x="56" y="546" font-size="11" fill="#898781">bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF.</text>
 </svg>

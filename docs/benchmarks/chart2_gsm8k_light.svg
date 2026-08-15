@@ -1,35 +1,51 @@
 <svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
 <rect x="0" y="0" width="900" height="460" fill="#fcfcfb"/>
-<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">GSM8K (5-shot) — Published Scores Only</text>
-<text x="56" y="56" font-size="13.5" fill="#52514e">Grade-school math accuracy, instruct models, apples-to-apples methodology</text>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">Grade-School Math Accuracy — Published + Our Own Real Spot-Check</text>
+<text x="56" y="56" font-size="13.5" fill="#52514e">Published scores (left) vs. our own measured head-to-head (right) — see footer for methodology</text>
 <line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#e1e0d9" stroke-width="1"/>
 <text x="46" y="346.0" font-size="12" fill="#898781" text-anchor="end">0</text>
 <line x1="56" y1="279.5" x2="870" y2="279.5" stroke="#e1e0d9" stroke-width="1"/>
-<text x="46" y="283.5" font-size="12" fill="#898781" text-anchor="end">19</text>
+<text x="46" y="283.5" font-size="12" fill="#898781" text-anchor="end">30</text>
 <line x1="56" y1="217.0" x2="870" y2="217.0" stroke="#e1e0d9" stroke-width="1"/>
-<text x="46" y="221.0" font-size="12" fill="#898781" text-anchor="end">37</text>
+<text x="46" y="221.0" font-size="12" fill="#898781" text-anchor="end">59</text>
 <line x1="56" y1="154.5" x2="870" y2="154.5" stroke="#e1e0d9" stroke-width="1"/>
-<text x="46" y="158.5" font-size="12" fill="#898781" text-anchor="end">56</text>
+<text x="46" y="158.5" font-size="12" fill="#898781" text-anchor="end">88</text>
 <line x1="56" y1="92.0" x2="870" y2="92.0" stroke="#e1e0d9" stroke-width="1"/>
-<text x="46" y="96.0" font-size="12" fill="#898781" text-anchor="end">75</text>
+<text x="46" y="96.0" font-size="12" fill="#898781" text-anchor="end">118</text>
 <line x1="56" y1="342.0" x2="870" y2="342.0" stroke="#c3c2b7" stroke-width="1.5"/>
-<path d="M 114.4,342.0 L 114.4,134.13559322033896 Q 114.4,130.13559322033896 118.4,130.13559322033896 L 156.4,130.13559322033896 Q 160.4,130.13559322033896 160.4,134.13559322033896 L 160.4,342.0 Z" fill="#2a78d6"/>
-<text x="137.4" y="120.1" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">63.3%</text>
-<text x="137.4" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Qwen2.5-1.5B</text>
-<text x="137.4" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
-<path d="M 277.20000000000005,342.0 L 277.20000000000005,182.66693442579054 Q 277.20000000000005,178.66693442579054 281.20000000000005,178.66693442579054 L 319.20000000000005,178.66693442579054 Q 323.20000000000005,178.66693442579054 323.20000000000005,182.66693442579054 L 323.20000000000005,342.0 Z" fill="#eb6834"/>
-<text x="300.2" y="168.7" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">48.8%</text>
-<text x="300.2" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">SmolLM2-1.7B</text>
-<text x="300.2" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
-<path d="M 440.0,342.0 L 440.0,220.82260958042144 Q 440.0,216.82260958042144 444.0,216.82260958042144 L 482.0,216.82260958042144 Q 486.0,216.82260958042144 486.0,220.82260958042144 L 486.0,342.0 Z" fill="#1baf7a"/>
-<text x="463.0" y="206.8" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">37.4%</text>
-<text x="463.0" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Llama-3.2</text>
-<text x="463.0" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">1B-Instruct</text>
-<path d="M 602.8000000000001,342.0 L 602.8000000000001,266.0069617372212 Q 602.8000000000001,262.0069617372212 606.8000000000001,262.0069617372212 L 644.8000000000001,262.0069617372212 Q 648.8000000000001,262.0069617372212 648.8000000000001,266.0069617372212 L 648.8000000000001,342.0 Z" fill="#eda100"/>
-<text x="625.8" y="252.0" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">23.9%</text>
-<text x="625.8" y="237.0" font-size="10.5" fill="#898781" text-anchor="middle">maj@1</text>
-<text x="625.8" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Gemma-2-2B-it</text>
+<path d="M 91.14285714285714,342.0 L 91.14285714285714,211.8898305084746 Q 91.14285714285714,207.8898305084746 95.14285714285714,207.8898305084746 L 133.14285714285714,207.8898305084746 Q 137.14285714285714,207.8898305084746 137.14285714285714,211.8898305084746 L 137.14285714285714,342.0 Z" fill="#2a78d6"/>
+<text x="114.1" y="197.9" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">63%</text>
+<text x="114.1" y="182.9" font-size="10.5" fill="#898781" text-anchor="middle">published, 5-shot</text>
+<text x="114.1" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Qwen2.5-1.5B</text>
+<text x="114.1" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
+<path d="M 207.42857142857142,342.0 L 207.42857142857142,242.61016949152543 Q 207.42857142857142,238.61016949152543 211.42857142857142,238.61016949152543 L 249.42857142857142,238.61016949152543 Q 253.42857142857142,238.61016949152543 253.42857142857142,242.61016949152543 L 253.42857142857142,342.0 Z" fill="#eb6834"/>
+<text x="230.4" y="228.6" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">49%</text>
+<text x="230.4" y="213.6" font-size="10.5" fill="#898781" text-anchor="middle">published, 5-shot</text>
+<text x="230.4" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">SmolLM2-1.7B</text>
+<text x="230.4" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Instruct</text>
+<path d="M 323.7142857142857,342.0 L 323.7142857142857,266.7627118644068 Q 323.7142857142857,262.7627118644068 327.7142857142857,262.7627118644068 L 365.7142857142857,262.7627118644068 Q 369.7142857142857,262.7627118644068 369.7142857142857,266.7627118644068 L 369.7142857142857,342.0 Z" fill="#1baf7a"/>
+<text x="346.7" y="252.8" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">37%</text>
+<text x="346.7" y="237.8" font-size="10.5" fill="#898781" text-anchor="middle">published, 5-shot</text>
+<text x="346.7" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Llama-3.2</text>
+<text x="346.7" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">1B-Instruct</text>
+<path d="M 440.00000000000006,342.0 L 440.00000000000006,295.364406779661 Q 440.00000000000006,291.364406779661 444.00000000000006,291.364406779661 L 482.00000000000006,291.364406779661 Q 486.00000000000006,291.364406779661 486.00000000000006,295.364406779661 L 486.00000000000006,342.0 Z" fill="#eda100"/>
+<text x="463.0" y="281.4" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">24%</text>
+<text x="463.0" y="266.4" font-size="10.5" fill="#898781" text-anchor="middle">published, maj@1</text>
+<text x="463.0" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Gemma-2-2B-it</text>
+<path d="M 672.5714285714286,342.0 L 672.5714285714286,187.10169491525426 Q 672.5714285714286,183.10169491525426 676.5714285714286,183.10169491525426 L 714.5714285714286,183.10169491525426 Q 718.5714285714286,183.10169491525426 718.5714285714286,187.10169491525426 L 718.5714285714286,342.0 Z" fill="#008300"/>
+<text x="695.6" y="173.1" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">75%</text>
+<text x="695.6" y="158.1" font-size="10.5" fill="#898781" text-anchor="middle">ours, n=8 @500tok</text>
+<text x="695.6" y="362.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">Base DeepSeek-R1</text>
+<text x="695.6" y="376.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="middle">
+Distill-1.5B (untuned)</text>
+<path d="M 788.8571428571429,342.0 L 788.8571428571429,134.135593220339 Q 788.8571428571429,130.135593220339 792.8571428571429,130.135593220339 L 830.8571428571429,130.135593220339 Q 834.8571428571429,130.135593220339 834.8571428571429,134.135593220339 L 834.8571428571429,342.0 Z" fill="#4a3aa7"/>
+<rect x="784.9" y="126.1" width="54.0" height="215.9" fill="none" stroke="#4a3aa7" stroke-width="1.5" stroke-dasharray="3,3" rx="6" opacity="0.55"/>
+<text x="811.9" y="120.1" font-size="13.5" font-weight="600" fill="#0b0b0b" text-anchor="middle">100%</text>
+<text x="811.9" y="105.1" font-size="10.5" fill="#898781" text-anchor="middle">ours, n=8 @500tok</text>
+<text x="811.9" y="362.0" font-size="12" font-weight="700" fill="#4a3aa7" text-anchor="middle">MalxLabs</text>
+<text x="811.9" y="376.0" font-size="12" font-weight="700" fill="#4a3aa7" text-anchor="middle">V4 (ours)</text>
 <text x="16" y="78" font-size="12" fill="#898781">Accuracy (%)</text>
-<text x="56" y="431" font-size="11" fill="#898781">Sources: SmolLM2 paper (arXiv:2502.02737, Table 5) for Qwen2.5-1.5B-Instruct/SmolLM2-1.7B-Instruct/Llama-3.2-1B-Instruct; Gemma-2-2B-it model</text>
-<text x="56" y="446" font-size="11" fill="#898781">card (maj@1, slightly different protocol).</text>
-<rect x="688.6" y="152.0" width="200" height="108" rx="10" fill="#2a78d6" opacity="0.08"/><rect x="688.6" y="152.0" width="200" height="108" rx="10" fill="none" stroke="#2a78d6" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/><text x="788.6" y="176.0" font-size="11.5" font-weight="700" fill="#2a78d6" text-anchor="middle">MalxLabs-V4 (ours)</text><text x="788.6" y="194.0" font-size="10" fill="#52514e" text-anchor="middle">no published GSM8K score</text><text x="788.6" y="224.0" font-size="21" font-weight="700" fill="#0b0b0b" text-anchor="middle">8 / 8 correct</text><text x="788.6" y="244.0" font-size="10" fill="#52514e" text-anchor="middle">our own real spot-check, n=8</text></svg>
+<text x="56" y="416" font-size="11" fill="#898781">Left group sources: SmolLM2 paper (arXiv:2502.02737, Table 5) for Qwen2.5/SmolLM2/Llama-3.2; Gemma-2-2B-it model card (maj@1). Right group:</text>
+<text x="56" y="431" font-size="11" fill="#898781">our own n=8 hand-written word-problem set, single-shot, -n 500, measured on this rig — not the GSM8K test set, not directly comparable to the</text>
+<text x="56" y="446" font-size="11" fill="#898781">left group's methodology.</text>
+<text x="288.6" y="78.0" font-size="11" font-weight="600" fill="#898781" text-anchor="middle">PUBLISHED (5-SHOT)</text><text x="753.7" y="78.0" font-size="11" font-weight="600" fill="#2a78d6" text-anchor="middle">OURS — REAL SPOT-CHECK, n=8</text><line x1="579.3" y1="76.0" x2="579.3" y2="342.0" stroke="#e1e0d9" stroke-width="1.5" stroke-dasharray="4,4"/><text x="695.6" y="110.0" font-size="10" fill="#898781" text-anchor="middle">reaches 8/8 (100%) if</text><text x="695.6" y="122.0" font-size="10" fill="#898781" text-anchor="middle">given 900 tok instead of 500</text></svg>

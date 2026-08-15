@@ -30,11 +30,14 @@ MalxLabs V4 proves that the "Reasoning Era" of AI is not restricted to modern H1
 
 ## 📊 Benchmarks & Comparisons
 
-How MalxLabs-V4 stacks up against similarly-sized small models, plus a real
-inference benchmark measured on a **second, non-GPU** legacy machine (an Intel
-i5-1035G7 laptop with integrated graphics only — no CUDA, no discrete GPU).
-Model specs and published scores are cited from each model's own card/paper;
-only the MalxLabs-V4 numbers are first-party measurements from this repo.
+Includes a **real, measured head-to-head against the untuned base model**
+(deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) — same hardware, same settings,
+back to back — so you can judge whether the SFT fine-tune actually helps, not
+just take our word for it. Plus a comparison against similarly-sized small
+models, and a real inference benchmark on a **second, non-GPU** legacy machine
+(an Intel i5-1035G7 laptop, integrated graphics only — no CUDA, no discrete
+GPU). Third-party specs/scores are cited from each model's own card/paper;
+the MalxLabs-V4-vs-base numbers are first-party measurements from this repo.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart1_params_dark.svg">
@@ -43,12 +46,12 @@ only the MalxLabs-V4 numbers are first-party measurements from this repo.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart2_gsm8k_dark.svg">
-  <img src="docs/benchmarks/chart2_gsm8k_light.svg" alt="GSM8K published benchmark score comparison across small instruct models">
+  <img src="docs/benchmarks/chart2_gsm8k_light.svg" alt="Grade-school math accuracy: published GSM8K scores for four small instruct models, plus our own measured head-to-head spot-check of MalxLabs-V4 (100%) versus its untuned base model (75% at matched budget, 100% with more budget)">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart3_hardware_dark.svg">
-  <img src="docs/benchmarks/chart3_hardware_light.svg" alt="MalxLabs-V4 real hardware benchmark dashboard on a non-GPU Intel i5-1035G7 laptop">
+  <img src="docs/benchmarks/chart3_hardware_light.svg" alt="MalxLabs-V4 vs base model real hardware benchmark dashboard on a non-GPU Intel i5-1035G7 laptop">
 </picture>
 
 **Full methodology, raw numbers, and honesty notes on what is/isn't

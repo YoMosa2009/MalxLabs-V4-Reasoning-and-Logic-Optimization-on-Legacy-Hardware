@@ -11,12 +11,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Benchmark suite for hardware testing** (planned item from the roadmap
   below, now delivered): real, measured CPU-only inference benchmark on a
   second machine with no discrete GPU (Intel i5-1035G7 / Iris Plus).
+- **Real head-to-head vs. the untuned base model** (deepseek-ai/DeepSeek-R1-
+  Distill-Qwen-1.5B via bartowski's GGUF): same hardware, same llama.cpp
+  settings, same 8-problem accuracy spot-check, run back to back. Throughput
+  is a wash (within noise of each other); MalxLabs-V4 reaches a correct final
+  answer within a 500-token budget 8/8 vs. the base model's 6/8 — documented
+  honestly, including that the base model's two "misses" were budget
+  truncation, not wrong answers (it reaches 8/8 too with more budget).
 - `docs/HARDWARE_BENCHMARK_2026-08.md` — full methodology, throughput
-  (`llama-bench` pp512/tg128), memory footprint, an 8-problem accuracy
+  (`llama-bench` pp512/tg128), memory footprint, the MalxLabs-V4-vs-base
   spot-check, and a reproduction of the README's own example prompt.
 - `docs/benchmarks/` — light/dark SVG comparison charts (parameter count vs.
-  6 similarly-sized small models; published GSM8K scores; this repo's own
-  measured hardware numbers), embedded in the README via `<picture>`.
+  6 similarly-sized small models; published GSM8K scores + our own measured
+  MalxLabs-V4-vs-base spot-check; real hardware throughput dashboard),
+  embedded in the README via `<picture>`.
 - New README section: [📊 Benchmarks & Comparisons](README.md#-benchmarks--comparisons).
 
 ## [1.0.0] - 2026-05-13
