@@ -1,0 +1,32 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="460" fill="#fcfcfb"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#0b0b0b">Harder Math &amp; Logic Reasoning — MalxLabs-V4 vs. Base</text>
+<text x="56" y="56" font-size="13.5" fill="#52514e">8 multi-step problems (systems of equations, work-rate, compound interest, age puzzles) — both measured, matched budget</text>
+<line x1="90" y1="330.0" x2="870" y2="330.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80" y="334.0" font-size="12" fill="#898781" text-anchor="end">0%</text>
+<line x1="90" y1="280.0" x2="870" y2="280.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80" y="284.0" font-size="12" fill="#898781" text-anchor="end">25%</text>
+<line x1="90" y1="230.0" x2="870" y2="230.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80" y="234.0" font-size="12" fill="#898781" text-anchor="end">50%</text>
+<line x1="90" y1="180.0" x2="870" y2="180.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80" y="184.0" font-size="12" fill="#898781" text-anchor="end">75%</text>
+<line x1="90" y1="130.0" x2="870" y2="130.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="80" y="134.0" font-size="12" fill="#898781" text-anchor="end">100%</text>
+<line x1="90" y1="330.0" x2="870" y2="330.0" stroke="#c3c2b7" stroke-width="1.5"/>
+<text x="16" y="86" font-size="12" fill="#898781">Accuracy (%), n=8</text>
+<path d="M 220.0,330.0 L 220.0,133.99999999999997 Q 220.0,129.99999999999997 224.0,129.99999999999997 L 346.0,129.99999999999997 Q 350.0,129.99999999999997 350.0,133.99999999999997 L 350.0,330.0 Z" fill="#2a78d6"/>
+<rect x="215.0" y="125.0" width="140" height="205.0" fill="none" stroke="#2a78d6" stroke-width="1.5" stroke-dasharray="3,3" rx="6" opacity="0.55"/>
+<text x="285.0" y="116.0" font-size="24" font-weight="700" fill="#0b0b0b" text-anchor="middle">100%</text>
+<text x="285.0" y="98.0" font-size="11.5" fill="#898781" text-anchor="middle">8/8 correct @ 700 tok</text>
+<text x="285.0" y="354.0" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="middle">MalxLabs-V4 (ours)</text>
+<path d="M 610.0,330.0 L 610.0,234.0 Q 610.0,230.0 614.0,230.0 L 736.0,230.0 Q 740.0,230.0 740.0,234.0 L 740.0,330.0 Z" fill="#eb6834"/>
+<text x="675.0" y="216.0" font-size="24" font-weight="700" fill="#0b0b0b" text-anchor="middle">50%</text>
+<text x="675.0" y="198.0" font-size="11.5" fill="#898781" text-anchor="middle">4/8 correct @ 700 tok</text>
+<text x="675.0" y="354.0" font-size="13" font-weight="500" fill="#52514e" text-anchor="middle">Base (untuned)</text>
+<text x="675.0" y="376.0" font-size="10.5" fill="#898781" text-anchor="middle">→ 87.5% (7/8) if given 1300 tokens instead of 700 —</text>
+<text x="675.0" y="390.0" font-size="10.5" fill="#898781" text-anchor="middle">1 problem still never resolves: the model kept re-deriving</text>
+<text x="675.0" y="404.0" font-size="10.5" fill="#898781" text-anchor="middle">the same correct number but got stuck re-verifying itself</text>
+<text x="675.0" y="418.0" font-size="10.5" fill="#898781" text-anchor="middle">in a loop and never committed to a final answer.</text>
+<text x="56" y="431" font-size="11" fill="#898781">Measured 2026-08-15, same rig, same llama.cpp settings, same 8 problems for both. Extended-budget re-run at -n 1300 for the 4 base-model</text>
+<text x="56" y="446" font-size="11" fill="#898781">problems that didn't finish at -n 700.</text>
+</svg>

@@ -31,13 +31,14 @@ MalxLabs V4 proves that the "Reasoning Era" of AI is not restricted to modern H1
 ## 📊 Benchmarks & Comparisons
 
 Includes a **real, measured head-to-head against the untuned base model**
-(deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) — same hardware, same settings,
-back to back — so you can judge whether the SFT fine-tune actually helps, not
-just take our word for it. Plus a comparison against similarly-sized small
-models, and a real inference benchmark on a **second, non-GPU** legacy machine
-(an Intel i5-1035G7 laptop, integrated graphics only — no CUDA, no discrete
-GPU). Third-party specs/scores are cited from each model's own card/paper;
-the MalxLabs-V4-vs-base numbers are first-party measurements from this repo.
+(deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) across three separate benchmarks —
+same hardware, same settings, back to back — so you can judge whether the SFT
+fine-tune actually helps, not just take our word for it. Plus a comparison
+against similarly-sized small models, and a real inference benchmark on a
+**second, non-GPU** legacy machine (an Intel i5-1035G7 laptop, integrated
+graphics only — no CUDA, no discrete GPU). Third-party specs/scores are cited
+from each model's own card/paper; the MalxLabs-V4-vs-base numbers are
+first-party measurements from this repo.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart1_params_dark.svg">
@@ -47,6 +48,16 @@ the MalxLabs-V4-vs-base numbers are first-party measurements from this repo.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart2_gsm8k_dark.svg">
   <img src="docs/benchmarks/chart2_gsm8k_light.svg" alt="Grade-school math accuracy: published GSM8K scores for four small instruct models, plus our own measured head-to-head spot-check of MalxLabs-V4 (100%) versus its untuned base model (75% at matched budget, 100% with more budget)">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart4_hardmath_dark.svg">
+  <img src="docs/benchmarks/chart4_hardmath_light.svg" alt="Harder math and logic reasoning accuracy: MalxLabs-V4 100% versus base model 50% at matched token budget, base model reaching 87.5% with more budget but one problem never resolving due to a self-verification loop">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/benchmarks/chart5_codegen_dark.svg">
+  <img src="docs/benchmarks/chart5_codegen_light.svg" alt="Execution-verified code generation: MalxLabs-V4 passes 5 of 6 real Python function tests versus base model's 3 of 6, with a per-function pass/fail grid">
 </picture>
 
 <picture>

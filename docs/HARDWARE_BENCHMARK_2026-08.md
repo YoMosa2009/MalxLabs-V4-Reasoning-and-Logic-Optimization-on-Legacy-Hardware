@@ -73,7 +73,7 @@ fine-tune shows up; accuracy is.**
   weights, CPU-only — comfortably inside this machine's 16 GB. Same order for
   the base model (not separately re-measured; identical weight count/format).
 
-### Head-to-head accuracy spot-check — MalxLabs-V4 vs. base (measured, n=8)
+### Benchmark 1: Grade-school accuracy spot-check — MalxLabs-V4 vs. base (measured, n=8)
 
 The real question: **is the SFT fine-tune actually better than the stock model
 it started from?** Same 8 hand-written grade-school word problems, same
@@ -135,6 +135,85 @@ a case the model would have self-corrected had generation continued — but it's
 a real observed failure mode at the edge of the token budget, not a
 hypothetical one.
 
+## Going Harder: Two Additional Head-to-Head Benchmarks
+
+The n=8 grade-school spot-check above turned out to mostly measure *token
+efficiency* — the base model could solve nearly everything given enough
+budget. To actually test whether the fine-tune improved reasoning itself, not
+just conciseness, two harder, more demanding benchmarks were run, same rig,
+same methodology, both models back to back.
+
+### Benchmark 2: Harder multi-step math & logic (n=8, matched budget)
+
+Eight problems requiring setting up and solving equations, not just single
+arithmetic operations: work-rate ("two pipes filling a tank"), compound
+interest, age-in-N-years algebra, ratio decomposition, multi-leg
+distance/time, and classic sum/difference and father/son age puzzles. Same
+`-n 700` budget for both models, same sampling settings, same rig.
+
+| | MalxLabs-V4 | Base (untuned) |
+|---|---|---|
+| **Correct @ 700 tokens** | **8 / 8 (100%)** | 4 / 8 (50%) |
+| **Correct @ 1300 tokens** (base only, re-run) | — | 7 / 8 (87.5%) |
+
+**The honest detail, because it's the interesting part:** re-running the
+base model's 4 misses at nearly double the budget (`-n 1300`), 3 resolved
+correctly — the model had reasoned its way to the right answer well before the
+cutoff and simply needed more room to finish. But **the 4th (the flour/sugar/
+butter ratio problem) never resolved, even at 1300 tokens.** Its transcript
+shows the model deriving the correct answer (450g) three separate times,
+explicitly, and then each time doubting itself and restarting the
+derivation — a genuine repetitive self-verification loop, not a budget
+shortfall. This is the same "hallucination loop" / "Logic Horizon" failure
+mode already documented in
+[RESEARCH_FINDINGS.md](RESEARCH_FINDINGS.md#1-the-logic-horizon-phenomenon),
+observed directly in the base model, on a problem MalxLabs-V4 solved cleanly
+on the first pass. That's a real, reproducible reasoning-decisiveness
+difference attributable to the fine-tune — not just "give it more tokens."
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="benchmarks/chart4_hardmath_dark.svg">
+  <img src="benchmarks/chart4_hardmath_light.svg" alt="Harder math and logic reasoning accuracy: MalxLabs-V4 100% versus base model 50% at matched token budget, base model reaching 87.5% with more budget but one problem never resolving due to a self-verification loop">
+</picture>
+
+### Benchmark 3: Execution-verified code generation (n=6)
+
+Six Python functions of real algorithmic substance — primality testing,
+efficient (non-naive-recursive) Fibonacci, palindrome checking with
+punctuation/case handling, merging sorted lists, binary search, vowel
+counting. Unlike the earlier "reproduce the README's example" check, **the
+generated code was actually extracted and executed** against test assertions
+in a sandboxed subprocess with a timeout — pass/fail is whatever Python's
+`assert` says, not a human judgment call.
+
+| | MalxLabs-V4 | Base (untuned) |
+|---|---|---|
+| **Tests passed** | **5 / 6** | 3 / 6 |
+
+Per-function, with the *actual* cause of each failure (verified by reading
+the transcripts, not assumed):
+
+| Function | MalxLabs-V4 | Base (untuned) |
+|---|---|---|
+| `is_prime` | ✅ | ✅ |
+| `fibonacci` | ✅ | ❌ never produced any code — spent the full 700-token budget deliberating between fast-doubling, matrix exponentiation, and memoization without settling on one |
+| `is_palindrome` | ❌ real bug: used a literal `.replace('[^a-z]', '')` (a regex pattern as a plain string) instead of `re.sub()`, so punctuation was never actually stripped | ❌ never produced any code — same deliberation pattern as its `fibonacci` attempt |
+| `merge_sorted` | ✅ | ✅ |
+| `binary_search` | ✅ | ✅ |
+| `count_vowels` | ✅ | ❌ real bug: wrote `s.lower().count('aeiou')`, which counts occurrences of the 5-letter substring `"aeiou"`, not individual vowel characters — a fundamentally wrong approach, not a typo |
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="benchmarks/chart5_codegen_dark.svg">
+  <img src="benchmarks/chart5_codegen_light.svg" alt="Execution-verified code generation: MalxLabs-V4 passes 5 of 6 real Python function tests versus base model's 3 of 6, with a per-function pass/fail grid">
+</picture>
+
+**Why this benchmark is more convincing than the first spot-check:** these
+failures aren't budget artifacts — 2 of the base model's 3 misses never
+produced *any* code at all (unlike the math benchmark, more tokens wouldn't
+obviously fix "which algorithm should I even use" indecision within a single
+generation), and the 3rd is a real, verifiable logic bug. MalxLabs-V4's one
+miss is also a real bug, not a truncation — full transparency either way.
+
 ## Comparison to Similar Small Reasoning Models
 
 Charts below compare MalxLabs-V4 against its own base model and against
@@ -161,17 +240,27 @@ measurements from this document**.
 ## Limitations & Honesty Notes
 
 - The 4 "published (5-shot)" bars in the GSM8K chart are **not** independently
-  re-run by us — they're cited figures from each model's card/paper. Only the
-  MalxLabs-V4-vs-base bars (both throughput and accuracy) are first-party
-  measurements from this rig.
-- The 8-problem spot-check is a sanity check, not a benchmark suite, and its
-  methodology (single-shot, hand-picked problems) differs from the published
-  5-shot GSM8K numbers next to it — don't compare the two groups directly. A
-  contributor running the actual GSM8K test set (see `CONTRIBUTING.md`)
-  against both models would be a genuinely useful follow-up.
-- The base model's 6/8-at-matched-budget result was a **budget** effect, not
-  an accuracy failure — see the caveat above. Reporting only "8/8 vs 6/8"
-  without that context would misrepresent what was actually measured.
+  re-run by us — they're cited figures from each model's card/paper. Every
+  other number in this document (all 3 benchmarks, both models) is a
+  first-party measurement from this rig.
+- All three spot-checks (n=8, n=8, n=6) are sanity checks, not comprehensive
+  benchmark suites, and none use the actual GSM8K/HumanEval test sets — their
+  methodology differs from the published 5-shot GSM8K numbers in the chart, so
+  don't compare across those groups directly. A contributor running the real
+  GSM8K or HumanEval test sets (see `CONTRIBUTING.md`) against both models
+  would be a genuinely useful, more rigorous follow-up.
+- Benchmark 1's 6/8-at-matched-budget result for the base model was mostly a
+  **budget** effect (documented above). Benchmark 2 re-tested that at a much
+  larger budget and still found a real, non-budget failure (the ratio
+  problem's self-verification loop). Benchmark 3's failures were checked
+  individually against the raw transcripts and are real bugs or genuine
+  non-completions, not budget or extraction artifacts — see the per-function
+  table above for exactly what went wrong in each case.
+- Code extraction for Benchmark 3 looks for the last fenced ` ```python `
+  block containing the target function name, falling back to a plain
+  `def name(...):` block (with indentation-based scanning) for output that
+  never uses markdown fences — both models got the same extraction logic, so
+  neither is penalized for formatting style alone.
 - `pp512`/`tg128` are `llama-bench` synthetic tests (fixed-length dummy
   prompt/generation), not end-to-end real-prompt latency — reported because
   they're the project's own standardized methodology, same as any llama.cpp

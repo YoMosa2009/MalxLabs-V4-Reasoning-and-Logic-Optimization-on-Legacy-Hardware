@@ -1,0 +1,46 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+<rect x="0" y="0" width="900" height="500" fill="#1a1a19"/>
+<text x="56" y="34" font-size="21" font-weight="600" fill="#ffffff">Code Generation, Execution-Verified — MalxLabs-V4 vs. Base</text>
+<text x="56" y="56" font-size="13.5" fill="#c3c2b7">6 Python functions — generated code actually run against test assertions, not eyeballed</text>
+<line x1="90" y1="290.0" x2="870" y2="290.0" stroke="#2c2c2a" stroke-width="1"/>
+<text x="80" y="294.0" font-size="12" fill="#898781" text-anchor="end">0</text>
+<line x1="90" y1="234.9" x2="870" y2="234.9" stroke="#2c2c2a" stroke-width="1"/>
+<text x="80" y="238.9" font-size="12" fill="#898781" text-anchor="end">2</text>
+<line x1="90" y1="179.9" x2="870" y2="179.9" stroke="#2c2c2a" stroke-width="1"/>
+<text x="80" y="183.9" font-size="12" fill="#898781" text-anchor="end">4</text>
+<line x1="90" y1="124.8" x2="870" y2="124.8" stroke="#2c2c2a" stroke-width="1"/>
+<text x="80" y="128.8" font-size="12" fill="#898781" text-anchor="end">6</text>
+<line x1="90" y1="290.0" x2="870" y2="290.0" stroke="#383835" stroke-width="1.5"/>
+<text x="16" y="86" font-size="12" fill="#898781">Tests passed / 6</text>
+<path d="M 220.0,290.0 L 220.0,156.31884057971013 Q 220.0,152.31884057971013 224.0,152.31884057971013 L 346.0,152.31884057971013 Q 350.0,152.31884057971013 350.0,156.31884057971013 L 350.0,290.0 Z" fill="#3987e5"/>
+<rect x="215.0" y="147.3" width="140" height="142.7" fill="none" stroke="#3987e5" stroke-width="1.5" stroke-dasharray="3,3" rx="6" opacity="0.55"/>
+<text x="285.0" y="140.3" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">5/6</text>
+<text x="285.0" y="314.0" font-size="13" font-weight="700" fill="#3987e5" text-anchor="middle">MalxLabs-V4 (ours)</text>
+<path d="M 610.0,290.0 L 610.0,211.39130434782606 Q 610.0,207.39130434782606 614.0,207.39130434782606 L 736.0,207.39130434782606 Q 740.0,207.39130434782606 740.0,211.39130434782606 L 740.0,290.0 Z" fill="#d95926"/>
+<text x="675.0" y="195.4" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">3/6</text>
+<text x="675.0" y="314.0" font-size="13" font-weight="500" fill="#c3c2b7" text-anchor="middle">Base (untuned)</text>
+<text x="56" y="348.0" font-size="12" font-weight="600" fill="#898781">PER-FUNCTION RESULT</text>
+<text x="56" y="382.0" font-size="11" fill="#c3c2b7">MalxLabs-V4</text>
+<text x="56" y="408.0" font-size="11" fill="#c3c2b7">Base</text>
+<text x="243.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">is_prime</text>
+<text x="243.0" y="378.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="243.0" y="404.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="357.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">fibonacci</text>
+<text x="357.0" y="378.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="357.0" y="404.0" font-size="14" font-weight="700" fill="#d03b3b" text-anchor="middle">✗</text>
+<text x="471.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">is_palindrome</text>
+<text x="471.0" y="378.0" font-size="14" font-weight="700" fill="#d03b3b" text-anchor="middle">✗</text>
+<text x="471.0" y="404.0" font-size="14" font-weight="700" fill="#d03b3b" text-anchor="middle">✗</text>
+<text x="585.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">merge_sorted</text>
+<text x="585.0" y="378.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="585.0" y="404.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="699.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">binary_search</text>
+<text x="699.0" y="378.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="699.0" y="404.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="813.0" y="360.0" font-size="9.5" fill="#898781" text-anchor="middle">count_vowels</text>
+<text x="813.0" y="378.0" font-size="14" font-weight="700" fill="#0ca30c" text-anchor="middle">✓</text>
+<text x="813.0" y="404.0" font-size="14" font-weight="700" fill="#d03b3b" text-anchor="middle">✗</text>
+<text x="56" y="458" font-size="10.5" fill="#898781">Measured 2026-08-15. Real bugs, not truncation: MalxLabs-V4's is_palindrome used a literal string .replace() instead of regex, so punctuation wasn't</text>
+<text x="56" y="472" font-size="10.5" fill="#898781">stripped. Base's count_vowels counted substring "aeiou" occurrences instead of individual vowels; its fibonacci and is_palindrome never produced any</text>
+<text x="56" y="486" font-size="10.5" fill="#898781">code within the 700-token budget (stuck deliberating on approach).</text>
+</svg>

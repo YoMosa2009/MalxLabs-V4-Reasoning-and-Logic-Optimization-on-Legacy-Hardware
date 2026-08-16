@@ -26,6 +26,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   MalxLabs-V4-vs-base spot-check; real hardware throughput dashboard),
   embedded in the README via `<picture>`.
 - New README section: [📊 Benchmarks & Comparisons](README.md#-benchmarks--comparisons).
+- **Two additional, harder head-to-head benchmarks vs. the base model**,
+  designed to test reasoning itself rather than token efficiency:
+  - Harder multi-step math/logic (n=8: work-rate, compound interest, age
+    algebra, ratio decomposition): MalxLabs-V4 8/8 (100%) vs. base 4/8 (50%)
+    at matched 700-token budget. Re-tested the base model's misses at 1300
+    tokens — 3 resolved, but 1 never converged: the model kept re-deriving
+    the same correct answer and looping back into re-verification instead of
+    committing, a genuine reasoning-decisiveness gap, not a budget artifact.
+  - Execution-verified code generation (n=6: primality, efficient Fibonacci,
+    palindrome check, merge, binary search, vowel count) — generated code
+    actually run against test assertions in a sandbox, not eyeballed.
+    MalxLabs-V4 5/6 vs. base 3/6, with the exact bug/failure documented for
+    every miss on both sides (including MalxLabs-V4's own bug).
+  - `docs/benchmarks/chart4_hardmath_*.svg`, `chart5_codegen_*.svg`.
 
 ## [1.0.0] - 2026-05-13
 
